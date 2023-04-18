@@ -1,0 +1,56 @@
+### Introduction to Amazon EC2 Instance
+
+Amazon Elastic Compute Cloud (Amazon EC2) provides secure, resizable compute
+capacity in the cloud as Amazon EC2 instances.
+
+- You can provision and launch an Amazon EC2 instance within minutes.
+
+- You can stop using it when you have finished running a workload. 
+
+- You pay only for the compute time you use when an instance is running, not when it is stopped or terminated.
+
+- You can save costs by paying only for server capacity that you need or want.
+
+#### How Amazon EC2 Instance works?
+
+1. **Selecting an instance type:** The first step in using EC2 is selecting an instance type that matches the user's needs. Instance types are differentiated based on CPU, memory, storage, and networking capacity.
+
+2. **Launching an instance:** Once the user has selected an instance type, they can launch an instance by creating an Amazon Machine Image (AMI) or by selecting a pre-existing AMI from the AWS Marketplace. An AMI is a pre-configured image of a virtual machine that includes an operating system, application server, and any necessary software.
+
+3. **Configuring the instance:** After launching the instance, the user can configure it by selecting an operating system, adding additional storage, and configuring security settings. They can also choose to use Elastic Block Store (EBS), a persistent block storage service provided by AWS, to store their data.
+
+4. **Accessing the instance:** Once the instance is launched and configured, the user can access it using a variety of tools, including the AWS Management Console, command-line tools, and APIs. They can also connect to the instance using SSH or RDP, depending on the operating system being used.
+
+5. **Running applications:** Once the user has connected to the instance, they can run their applications on it. EC2 instances support a variety of operating systems and programming languages, allowing users to run a wide range of applications.
+
+6. **Scaling the instance:** EC2 instances are scalable, meaning that users can increase or decrease the capacity of their instances as needed. This can be done manually, or automatically using AWS Auto Scaling, which allows users to define scaling policies based on criteria such as CPU utilization or network traffic.
+
+#### Amazon EC2 instance types
+
+Amazon EC2 instance types are optimized for different tasks. When selecting an instance type, consider the specific needs of your workloads and applications. This might include requirements for compute, memory, or storage capabilities.
+
+1. **General Purpose Instances:** These instances provide a balance of compute, memory, and network resources, making them suitable for a wide range of workloads.
+
+2. **Compute Optimized Instances:** These instances are designed for compute-intensive workloads that require high CPU performance, such as scientific modeling, gaming, and ad serving.
+
+3. **Memory Optimized Instances:** These instances are designed for memory-intensive workloads that require high memory-to-CPU ratios, such as high-performance databases and in-memory analytics.
+
+4. **Storage Optimized Instances:** These instances are designed for workloads that require high, sequential read and write access to large datasets, such as big data analytics and high-performance databases.
+
+5. **Accelerated computing instances:** These instances are designed to provide high-performance computing capabilities for workloads that require specialized hardware acceleration. These instances are ideal for applications such as machine learning, deep learning, and high-performance computing.
+
+#### Amazon EC2 pricing
+
+Amazon EC2 works on the pay-as-go-pricing model, you pay only for the compute time that you use. Amazon EC2 offers a variety of pricing options for different use cases.
+
+1. **On-Demand Instances** are ideal for **short-term**, **irregular workloads** that **cannot be interrupted**. No upfront costs or minimum contracts apply. The instances run continuously until you stop them, and you pay for only the compute time you use
+
+2. **AWS offers Savings Plans** are ideal for workloads that involve a consistent amount of compute usage over a **1-year** or **3-year** term. This term commitment results in savings of up to **72% over On-Demand costs.**
+
+3. **Reserved Instances** are a billing discount applied to the use of On-Demand Instances in your account. You can purchase Standard Reserved and Convertible Reserved Instances for a 1-year or 3-year term, and Scheduled Reserved Instances for a 1-year term. You realize greater cost savings with the 3-year option.
+
+4. **Spot Instances** are ideal for workloads with **flexible start and end times**, or that can **withstand interruptions**. Spot Instances use unused Amazon EC2 computing capacity and offer you cost savings at up to **90% off of On-Demand prices**.
+
+5. **Dedicated Hosts** are physical servers with Amazon EC2 instance capacity that is fully dedicated to your use.
+   
+   
